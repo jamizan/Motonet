@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="motonet.css">
+</head>
+<body>
+    <h1 class="title_orders">TILAUSLISTA: </h1>  <!--OTSIKKO SIVUSTOLLE, joka on keskitetty-->
+    <div class="search">
+        <select id="filterSelect" class="filterSelect">   <!--Alasvetovalikko seuraavilla suodattimilla-->
+          <option value="suodatin">Suodatin: </option>
+          <option value="tilausnumero">Tilausnumero</option>
+          <option value="tilaaja">Tilaaja</option>
+          <option value="tuote">Tuote</option>
+        </select>
+        <input type="text" id="searchInput" placeholder="Hae...">
+        <button type="button">Hae</button>
+    </div>
+    <div class="content">
+      <table class="table" id="table">
+        <tr class="row1">  
+          <th class="check"></th>        
+          <th class="info">OrderID</th>
+          <th class="info">CustomerID</th>
+          <th class="info">Customer</th>
+          <th class="info">Delivery date</th>
+          <th class="open"></th>
+        </tr>
+        <tr class="row" id="row">
+          <td class="check">
+            <input type="checkbox" name="checkbox" id="checkbox">
+          </td>
+          <td class="block" id="orderId">515</td>
+          <td class="block">1234</td>
+          <td class="block">Durlock S.A.</td>
+          <td class="block">6-06-2023</td>
+          <td class="open"><button><a href="Projekti.pdf.html" target="_blank" class="button">Avaa</a></button></td>
+        </tr>        
+        <tr class="row" id="row">
+          <td class="check">
+            <input type="checkbox" name="checkbox2" id="checkbox2">
+          </td>
+          <td class="block">a</td>
+          <td class="block">f</td>
+          <td class="block">g</td>
+          <td class="block">g</td>
+          <td class="open"><button><a href="Projekti.pdf.html" target="_blank" class="button">Avaa</a></button></td>
+        </tr>  
+        <tr class="row" id="row">
+          <td class="check">
+            <input type="checkbox" name="checkbox3" id="checkbox3">
+          </td>
+          <td class="block">a</td>
+          <td class="block">f</td>
+          <td class="block">g</td>
+          <td class="block">g</td>
+          <td class="open"><button><a href="Projekti.pdf.html" target="_blank" class="button">Avaa</a></button></td>
+        </tr>  
+      </table>
+    </div>
+    <script src="motonet.js"></script>
+</body>
+</html>

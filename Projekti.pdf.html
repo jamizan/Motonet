@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PDF tilauksesta</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <style>
+      * {
+        box-sizing: border-box;
+
+      }
+        h1 {text-align: center;}
+        h1 {font-size: 25px;}
+
+        form {
+			border: 1px solid #ffffff;
+			background-color: #a4a4a4;
+			padding: 10px;
+			margin-bottom: 10px;
+		}
+      
+		input[type="text"], textarea {
+      resize: none;
+			width: 50%;
+      height: 75px;
+      height:min-content;
+			padding: 12px;
+			border: 1px solid #8a8a8a;
+			border-radius: 4px;
+			box-sizing: border-box;
+			margin-bottom: 10px;
+		}
+
+		.comment-history {
+      width: 50%;
+      height: 250px;
+			border: 10px  #fefefe;
+      border-radius: 5px;
+			background-color: #ffffff;
+      float: upright;
+      
+    }
+
+    button[name="save"] {
+  font-size:large;
+  font-style: initial; 
+  background-color: #96faa2;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+.comment {
+  float: left;
+
+}
+.content1{
+  width: 100%;
+  border: 1px solid black;
+  height: 500px;
+}
+.orderer{
+  border-collapse: collapse;
+  table-layout: fixed;
+  border: 1px solid black;
+}
+.block{
+  width: 19%;
+  border: 1px solid black;
+}
+.products{
+  border-collapse: collapse;
+  table-layout: fixed;
+  border: 1px solid black;
+}
+.block1{
+  width: 19%;
+  border: 1px solid black;
+}
+
+    </style>
+  </head>
+  <body>
+    <h1 id="otsikko"></h1>
+    <div class="content1">
+      <table class="orderer" id="orderer">
+
+      </table>
+
+    </div>
+    <form>
+      <img src="Warning.sign.jpg.png" width="16" height="16">
+      <label for="comment">KOMMENTOI:</label><br>
+      <input type="text" id="input-text">
+      <button type="button" onclick="displayText()" name="save">Tallenna</button><br>
+      <div class="comment-history">
+      <h4> Aikaisemmat kommentit:</h4>
+      <div id="output"></div>
+    </div>
+    </form>
+  </body>
+  <script src="Projekti.pdf.js"></script>
+</html>

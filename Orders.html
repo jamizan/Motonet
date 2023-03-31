@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="motonet.css">
+</head>
+<body>
+    <h1 class="title_orders">TILAUSLISTA: </h1>  <!--OTSIKKO SIVUSTOLLE, joka on keskitetty-->
+    <div class="search">
+        <select id="filterSelect" class="filterSelect">   <!--Alasvetovalikko seuraavilla suodattimilla-->
+          <option value="suodatin">Suodatin: </option>
+          <option value="tilausnumero">Tilausnumero</option>
+          <option value="tilaaja">Tilaaja</option>
+          <option value="tuote">Tuote</option>
+        </select>
+        <input type="text" id="searchInput" placeholder="Hae...">
+        <button type="button">Hae</button>
+    </div>
+    <div class="content">
+      <table class="table" id="table"></table>
+    </div>
+    <script src="motonet.js"></script>
+</body>
+</html>
